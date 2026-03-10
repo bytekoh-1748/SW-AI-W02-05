@@ -2,6 +2,7 @@
 # 문제 링크: https://www.acmicpc.net/problem/3107
 
 ip_list = input().split(":")
+print(ip_list)
 if len(ip_list) > 8:
     ip_list.remove('')
 opt = 8 - len(ip_list)
