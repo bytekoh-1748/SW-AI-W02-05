@@ -53,12 +53,11 @@ def combinations(n, k):
         for i in range(start, n+1):
         ## TODO: 백트랙킹 3단계 구현
         ## 1. 선택(Choose)
-            if i not in current_combination:
-                current_combination.append(i)
-            ## 2. 탐색(Explore)
-                backtrack(i + 1, current_combination)
-            ## 3. 취소(Unchoose)
-                current_combination.pop()
+            current_combination.append(i)
+        ## 2. 탐색(Explore)
+            backtrack(i + 1, current_combination)
+        ## 3. 취소(Unchoose)
+            current_combination.pop()
     
     backtrack(1, [])
     return result

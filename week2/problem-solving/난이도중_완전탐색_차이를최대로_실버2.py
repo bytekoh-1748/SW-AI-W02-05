@@ -3,19 +3,36 @@
 
 n = int(input())
 nums = list(map(int, input().split()))
-sum = 0
-result = []
 
-for i in range(n -1):
-    sum += nums[i] + nums[i+1]
-    result.append(sum)
+sum_max = 0
 
-def backtracking(start, current):
-    if len(current) == n:
-        return current
+
+def combination(n):
+
+    def searching(start, current_combination):
+        global sum_max
+        if (len(current_combination) == n-1):
+            sum = 0
+            for i in range(n):
+                if i not in current_combination:
+                    current_combination.append(i)
+            for i in range(n-1):
+                sum += abs(nums[current_combination[i]] - nums[current_combination[i + 1]])
+            if sum_max < sum:
+                sum_max = sum
+            current_combination.pop()
+            return
+
+        for i in range(n):
+            if i not in current_combination:
+                current_combination.append(i)
+                searching(i + 1, current_combination)
+                current_combination.pop()
+        return
     
-    for i in range(n):
-        if nums[i] not in current:
-            current.append(nums[i])
-            
-    
+
+    searching(0,[])
+
+combination(n)
+
+print(sum_max)
