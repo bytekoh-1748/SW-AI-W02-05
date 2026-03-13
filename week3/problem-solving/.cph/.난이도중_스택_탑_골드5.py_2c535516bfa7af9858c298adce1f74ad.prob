@@ -1,0 +1,1 @@
+{"name":"Local: 난이도중_스택_탑_골드5","url":"/Users/rehjd/SW-AI-W02-05-TEMPLATE/week3/problem-solving/난이도중_스택_탑_골드5.py","tests":[{"id":1773398308212,"input":"5\n6 9 5 7 4","output":"0 0 2 2 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rehjd/SW-AI-W02-05-TEMPLATE/week3/problem-solving/난이도중_스택_탑_골드5.py","group":"local","local":true}

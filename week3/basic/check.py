@@ -3,11 +3,11 @@
 알고리즘 학습 문제 채점 스크립트
 
 사용법:
-  python check.py <문제파일명>
-  예: python check.py python_basic.py
+  python3 check.py <문제파일명>
+  예: python3 check.py 06_queue.py
 
 또는 모든 문제 채점:
-  python check.py --all
+  python3 check.py --all
 """
 
 import sys
