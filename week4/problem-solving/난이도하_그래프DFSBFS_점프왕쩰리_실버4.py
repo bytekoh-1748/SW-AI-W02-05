@@ -8,7 +8,6 @@ square = []
 visited = [[False]* n for _ in range(n)]
 stack = [(0,0)]
 visited[0][0] = True
-completed = False
 for _ in range(n):
     square.append(list(map(int, input().split())))
 
@@ -18,8 +17,8 @@ while stack:
 
     if square[r][c] == -1:
         print("HaruHaru")
-        completed = True
-
+        exit()
+        
     if jump == 0:
         continue
  
@@ -30,5 +29,6 @@ while stack:
             visited[r][c + jump] = True
             stack.append((r, c + jump))
 
-if not completed:
-    print("Hing")
+
+print("Hing")
+

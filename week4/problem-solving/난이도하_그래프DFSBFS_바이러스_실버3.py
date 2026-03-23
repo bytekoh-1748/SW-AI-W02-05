@@ -6,7 +6,7 @@ m = int(input())
 
 graph = [[] for _ in range(n+1)]
 
-visited = {1}
+visited = {1} #[False] * (n+1) 로 하기
 infected = [1]
 for _ in range(m):
     inputs = list(map(int, input().split()))

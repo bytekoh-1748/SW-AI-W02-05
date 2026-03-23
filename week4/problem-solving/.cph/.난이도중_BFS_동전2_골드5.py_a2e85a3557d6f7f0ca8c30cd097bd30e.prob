@@ -1,0 +1,1 @@
+{"name":"Local: 난이도중_BFS_동전2_골드5","url":"/Users/rehjd/SW-AI-W02-05-TEMPLATE/week4/problem-solving/난이도중_BFS_동전2_골드5.py","tests":[{"id":1774262171617,"input":"3 15\n1\n5\n12","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rehjd/SW-AI-W02-05-TEMPLATE/week4/problem-solving/난이도중_BFS_동전2_골드5.py","group":"local","local":true}
