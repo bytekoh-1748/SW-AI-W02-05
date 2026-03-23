@@ -2,21 +2,22 @@
 # 문제 링크: https://www.acmicpc.net/problem/5639
 
 import sys
+sys.setrecursionlimit(10**9) # 재귀 깊이 제한을 넉넉하게 늘려줍니다.
 nums = list(map(int, sys.stdin.read().split()))
 
 def search(start, end):
     if start > end:
-        return nums[start]
+        return 
     
     root = start
     left = start + 1
-    right = 0
+    right = end + 1
     for i in range(left, end + 1):
         if nums[root] < nums[i]:
             right = i
             break
-    result_left = search(left, right -1 )
-    result_right = search(right, end)
-    return [result_left] + [result_right] + [root]
+    search(left, right -1)
+    search(right, end)
+    print(nums[root])
 
-print(search(0, len(nums) -1))
+search(0, len(nums) -1)
