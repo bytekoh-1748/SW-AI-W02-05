@@ -1,0 +1,1 @@
+{"name":"Local: 난이도중_DP_평범한배낭_골드5","url":"/Users/rehjd/SW-AI-W02-05-TEMPLATE/week5/problem-solving/난이도중_DP_평범한배낭_골드5.py","tests":[{"id":1774671605351,"input":"4 7\n6 13\n4 8\n3 6\n5 12","output":"14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rehjd/SW-AI-W02-05-TEMPLATE/week5/problem-solving/난이도중_DP_평범한배낭_골드5.py","group":"local","local":true}
